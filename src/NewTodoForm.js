@@ -21,7 +21,7 @@ export class NewTodoForm extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="work">Height:-</label>
+          <label htmlFor="work">Work:-</label>
           <input name="work" value={this.state.work} onChange={this.handleChange} />
           <button>Todo</button>
         </form>

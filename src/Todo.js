@@ -13,7 +13,7 @@ export class Todo extends Component {
           <button>delete</button>
         </form> */}
         <p>{line}</p>
-        <button>delete</button>
+        <button>edit</button>
         <button>delete</button>
       </div>
     );
