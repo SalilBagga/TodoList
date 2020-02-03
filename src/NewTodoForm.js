@@ -5,6 +5,7 @@ export class NewTodoForm extends Component {
     super(props);
     this.state = { id: '', work: '', isEditing: false };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(evt) {
     this.setState({
@@ -13,8 +14,8 @@ export class NewTodoForm extends Component {
   }
   handleSubmit(evt) {
     evt.preventDefault();
-    const newbox = { ...this.state, id: uuid() };
-    this.props.addBox(newbox);
+    const newevent = { ...this.state, id: uuid() };
+    this.props.addevent(newevent);
     this.setState({ id: '', work: '', isEditing: false });
   }
   render() {

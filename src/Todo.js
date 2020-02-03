@@ -3,7 +3,7 @@ import './Todo.css';
 
 export class Todo extends Component {
   render() {
-    let line = 'yo';
+    // let line = 'yo';
 
     return (
       <div className="todo">
@@ -12,7 +12,7 @@ export class Todo extends Component {
           <button>edit</button>
           <button>delete</button>
         </form> */}
-        <p>{line}</p>
+        <p>{this.props.line}</p>
         <button>edit</button>
         <button>delete</button>
       </div>
